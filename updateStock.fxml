@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #befffc;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockfinal.controllerUpdateStock">
+    <children>
+        <Label layoutX="41.0" layoutY="124.0" text="Label:" textFill="#025059">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="168.0" text="Available:" textFill="#025059">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="41.0" layoutY="212.0" prefHeight="27.0" prefWidth="122.0" text="Price:" textFill="#025059">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="252.0" prefHeight="27.0" prefWidth="94.0" text="profit:" textFill="#025059">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="labelField" layoutX="164.0" layoutY="125.0" prefHeight="26.0" prefWidth="202.0" promptText="Label" />
+        <TextField fx:id="availableField" layoutX="164.0" layoutY="169.0" prefHeight="26.0" prefWidth="202.0" promptText="Available" />
+        <TextField fx:id="priceField" layoutX="164.0" layoutY="213.0" prefHeight="26.0" prefWidth="202.0" promptText="Price" />
+        <PasswordField fx:id="profitField" layoutX="164.0" layoutY="253.0" prefHeight="26.0" prefWidth="202.0" promptText="Profit" />
+        <Label alignment="CENTER" layoutX="90.0" layoutY="14.0" prefHeight="70.0" prefWidth="414.0" text="Update Stock" textFill="#025059">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Button layoutX="213.0" layoutY="360.0" mnemonicParsing="false" onAction="#clickOnUpdate" prefHeight="26.0" prefWidth="133.0" style="-fx-background-color: #025059;" text="update" textFill="WHITE" />
+        <!--      <Label fx:id="errorMessage" alignment="CENTER" layoutX="1.0" layoutY="333.0" prefHeight="27.0" prefWidth="594.0" />-->
+        <Button fx:id="Back" layoutX="553.0" layoutY="11.0" mnemonicParsing="false" onAction="#clickOnBack" style="-fx-background-color: #025059;" text="Back" textFill="WHITE" />
+    </children>
+</AnchorPane>

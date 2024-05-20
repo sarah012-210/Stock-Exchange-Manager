@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="503.0" style="-fx-background-color: #00274b;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockfinal.Register">
+   <children>
+      <Label layoutX="51.0" layoutY="23.0" text="Register " textFill="#b7e1ff">
+         <font>
+            <Font name="Script MT Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="141.0" text="Username:" textFill="#b7e1ff">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="204.0" text="Password:" textFill="#b7e1ff">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Username" layoutX="144.0" layoutY="145.0" onAction="#ClickOnLogin" prefHeight="26.0" prefWidth="209.0" promptText="Username" />
+      <PasswordField fx:id="Password" layoutX="143.0" layoutY="208.0" onAction="#ClickOnLogin" prefHeight="26.0" prefWidth="210.0" promptText="Password" />
+      <ChoiceBox fx:id="choiceBox" layoutX="174.0" layoutY="262.0" prefWidth="150.0" />
+
+      <TextField fx:id="Type" alignment="CENTER" layoutX="63.0" layoutY="262.0" onAction="#ClickOnLogin" prefHeight="26.0" prefWidth="74.0" promptText="Type" />
+      <Label fx:id="errorLoginMessage" alignment="CENTER" layoutX="63.0" layoutY="310.0" prefHeight="18.0" prefWidth="258.0" textFill="#8c050a" />
+      <Button fx:id="loginButton" layoutX="249.0" layoutY="349.0" mnemonicParsing="false" onAction="#ClickOnLogin" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #b7e1ff;" text="Login" textFill="#00396b" />
+      <Button fx:id="SignUp" layoutX="10.0" layoutY="349.0" mnemonicParsing="false" onAction="#clickOnSignUp" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #b7e1ff;" text="SignUp" textFill="#00274b" />
+      <AnchorPane layoutX="5.0" layoutY="212.0" prefHeight="18.0" prefWidth="15.0">
+         <children>
+            <ImageView fx:id="stockimageView" fitHeight="26.0" fitWidth="28.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/locked.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="11.0" layoutY="41.0" prefHeight="35.0" prefWidth="35.0">
+         <children>
+            <ImageView fx:id="shieldImageView" fitHeight="42.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/click.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="windowButton" layoutY="1.0" mnemonicParsing="false" onAction="#openNewWindow" style="-fx-background-color: #b7e1ff;" text="New Window" textFill="#00274b" />
+      <ImageView fitHeight="239.0" fitWidth="200.0" layoutX="354.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/stock img.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

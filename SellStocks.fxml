@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #b7e1ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockfinal.orderManagementController">
+   <children>
+      <TableView fx:id="selectedStocksTable" layoutX="111.0" layoutY="38.0" prefHeight="286.0" prefWidth="394.0" />
+      <Button fx:id="sellButton" layoutX="185.0" layoutY="338.0" mnemonicParsing="false" onAction="#sellStocks" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #002e7e;" text="Sell Your Stock" textFill="WHITE" />
+      <TextField fx:id="sellField" layoutX="293.0" layoutY="338.0" prefHeight="26.0" prefWidth="130.0" promptText="Quantity" />
+      <Button layoutX="515.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickOnBack" style="-fx-background-color: #002e7e;" text="Back" textFill="#fffdfd" />
+      <Label fx:id="balanceLabel" layoutX="27.0" text="Wallet Balance: $0.00" textFill="#2f00b1">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

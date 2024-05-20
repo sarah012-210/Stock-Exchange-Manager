@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="354.0" prefWidth="460.0" style="-fx-background-color: #befffc;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockfinal.controllerRetriveUser">
+   <children>
+<!--      <Label layoutX="34.0" layoutY="54.0" text="Name:" />-->
+<!--      <Label layoutX="34.0" layoutY="93.0" text="Password:" />-->
+      <Label layoutX="60.0" layoutY="130.0" text="Name:" textFill="#025059">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="192.0" text="Password:" textFill="#025059">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="79.0" layoutY="19.0" prefHeight="70.0" prefWidth="317.0" text="User Details" textFill="#025059">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+       <Label fx:id="nameLabel" alignment="CENTER" layoutX="199.0" layoutY="97.0" prefHeight="27.0" prefWidth="230.0" textFill="#840d17">
+           <font>
+               <Font size="14.0" />
+           </font>
+       </Label>
+       <Label fx:id="passwordLabel" alignment="CENTER" layoutX="188.0" layoutY="144.0" prefHeight="27.0" prefWidth="230.0" textFill="#840d17">
+           <font>
+               <Font size="14.0" />
+           </font>
+       </Label>
+      <Button fx:id="Back" layoutX="398.0" layoutY="19.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #025059;" text="Back" textFill="#f7f0f0" />
+<!--      <Label fx:id="nameLabel" layoutX="182.0" layoutY="101.0" prefHeight="27.0" prefWidth="122.0"/>/>-->
+<!--      <Label fx:id="passwordLabel" layoutX="182.0" layoutY="144.0" prefHeight="27.0" prefWidth="122.0" />-->
+   </children>
+</AnchorPane>
