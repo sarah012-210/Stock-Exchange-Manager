@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockfinal.controllerPremium">
+<AnchorPane style="-fx-background-color: #d8afff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalooppro.controllerPremium">
    <children>
-      <VBox alignment="CENTER" layoutX="196.0" layoutY="131.0" prefHeight="146.0" prefWidth="189.0" spacing="10">
-         <children>
-            <Button fx:id="stockNotificationButton" onAction="#subscribeForNotifications" text="Subscribe for Stock Notifications" />
-            <Button fx:id="lineChartButton" onAction="#showLineChart" text="Show Line Chart" />
-         </children>
-      </VBox>
-      <Label layoutX="14.0" layoutY="20.0" prefHeight="72.0" prefWidth="262.0" text="Primium user">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-      <Button layoutX="31.0" layoutY="348.0" mnemonicParsing="false" onAction="#ClickOnBack" prefHeight="26.0" prefWidth="90.0" text="Back" />
+      <Button fx:id="stockNotificationButton" layoutX="20.0" layoutY="20.0" onAction="#subscribeForNotifications" style="-fx-background-color: #3e007b;" text="Subscribe for Notifications" textFill="WHITE" />
+      <Button fx:id="lineChartButton" layoutX="200.0" layoutY="20.0" onAction="#showLineChart" style="-fx-background-color: #3e007b;" text="Show Line Chart" textFill="WHITE" />
+      <TextArea fx:id="notificationArea" editable="false" layoutX="20.0" layoutY="60.0" prefHeight="200.0" prefWidth="400.0" wrapText="true" />
+      <Button layoutX="20.0" layoutY="280.0" onAction="#ClickOnBack" style="-fx-background-color: #3e007b;" text="Back" textFill="WHITE" />
    </children>
 </AnchorPane>
