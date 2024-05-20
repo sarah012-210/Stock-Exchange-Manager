@@ -105,13 +105,11 @@ public class controllerPremium extends User {
         }, 2000, 2000); // Add new data point every 2 seconds
     }
 
-    public void ClickOnBack(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("User.fxml"));
-
-        root = loader.load();
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void clickOnBack(ActionEvent event) throws IOException {
+        try {
+            Register.loadScene(event, "User.fxml");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

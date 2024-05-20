@@ -70,7 +70,7 @@ public class controllerBond extends User implements Initializable { //"Name","Co
         tableViewBoughtBonds.getColumns().addAll(boughtSymbolColumn, boughtPriceColumn, boughtFaceValueColumn, boughtInterestRateColumn, boughtMaturityYearsColumn);
 
         try {
-            LoadBondsFromCSV("src/main/resources/com/example/finalooppro/bondnew.csv");
+            LoadBondsFromCSV("src/main/resources/com/example/stockfinal/bondnew.csv");
         } catch (IOException | CsvValidationException e) {
             throw new RuntimeException(e);
         }
@@ -148,7 +148,7 @@ public class controllerBond extends User implements Initializable { //"Name","Co
     }
 
     private void updateCSV() {
-        try (CSVWriter writer = new CSVWriter(new FileWriter("C:\\Users\\Sarah\\IdeaProjects\\oop pro\\src\\main\\resources\\com\\example\\ooppro\\bondnew.csv"))) {
+        try (CSVWriter writer = new CSVWriter(new FileWriter("src/main/resources/com/example/stockfinal/bondnew.csv"))) {
             // Write column headers
             String[] headers = {"Symbol", "Price", "Face Value", "Interest Rate", "Maturity Years"};
             writer.writeNext(headers);

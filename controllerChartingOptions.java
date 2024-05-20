@@ -119,7 +119,7 @@ public class controllerChartingOptions {
 
     public void clickOnBack(ActionEvent event) throws IOException {
         try {
-            Register.loadScene(event, "Admin.fxml");
+            Register.loadScene(event, "User.fxml");
         } catch (IOException e) {
             e.printStackTrace();
         }

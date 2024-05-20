@@ -22,7 +22,7 @@ public class MarketPerformanceController implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
 
-        try (CSVReader csvReader = new CSVReader(new FileReader("C:\\Users\\Sarah\\IdeaProjects\\oop pro\\src\\main\\resources\\com\\example\\ooppro\\market.csv"))) {
+        try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/com/example/stockfinal/market.csv"))) {
             csvReader.readNext();
             String[] nextRecord;
             while ((nextRecord = csvReader.readNext()) != null) {
