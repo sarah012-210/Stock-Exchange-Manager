@@ -1,3 +1,6 @@
+IMPORTANT NOTE:to login as an admin please use 
+username:Lyan , password:2003l
+
 README website link with photos and videos: https://small-bandana-6f1.notion.site/README-03f62d5db4764b8d920b2ef7235953c1
 
 # README
